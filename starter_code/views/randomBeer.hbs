@@ -1,0 +1,20 @@
+<h1>🍻 Hola Chico, una cerveza por favor 🍻</h1>
+
+<div class="rdm-section">
+
+<img src="{{rdmBeer.0.image_url}}" alt="">
+<div class="rdm-container">
+
+<h3>{{rdmBeer.0.name}}</h3>
+<h3 class  = "rdm-tagline">{{rdmBeer.0.tagline}}</h3>
+<p>{{rdmBeer.0.description}}</p>
+<p><b> Pairing : </b></p>
+   <ul>{{#each rdmBeer.0.food_pairing}}
+    <li>{{this}}</li>
+    {{/each}}
+   </ul>  
+</p>
+<p><b>Brewers Tips : </b>{{rdmBeer.0.brewers_tips}}</p>
+</div>
+
+</div>
